@@ -7,12 +7,16 @@ using UnityEngine;
 //ejemplo, si en la variable se ingresa el texto “Ana”, el mensaje en consola debe decir “Hola
 //Ana”.
 
+
+
 public class Ej03 : MonoBehaviour
 {
+    public string nombre;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        Debug.Log("Hola " + nombre);
     }
 
     // Update is called once per frame
