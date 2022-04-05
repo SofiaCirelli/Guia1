@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -13,7 +14,19 @@ public class Ej06 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        if (num1 <= 0)
+        {
+            Debug.Log("El número debe ser mayor a 0");
+        }
+        else if (num1 % 2 == 0)
+        {
+            Debug.Log("El número " + num1 + "es par");
+        }
+        else
+        {
+            Debug.Log("El número " + num1 + "es impar");
+        }
+
     }
 
     // Update is called once per frame
